@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ocular Innovations Push Portal</title>
+  </head>
+  <body>
+    <!-- SECTION Header/Navigation -->
+    <header class="w-100">
+      <nav class="d-flex justify-content-center bg-primary p-2">
+        <div class="bg-white rounded">
+          <a href="#" class="navbar-brand">
+            <img src="img/ETG Logo_Ocular.png" alt="Ocular Innovations" />
+          </a>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <h1 class="display-2">Ocular Innovations Push Portal</h1>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <p class="lead">
+            Use the thumbnails below to select which content to send to your
+            patient.
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- !SECTION -->
+    <!-- SECTION Optometry Product Suite -->
+    <section>
+      <div class="container-fluid">
+        <div class="row text-center">
+          <h2 class="display-4">Optometry Content</h2>
+        </div>
+        <div class="row mx-auto my-3 w-50">
+          <!-- SECTION Intro to Eyewear Thumbnail -->
+          <div class="col-lg-4 col-md-6">
+            <div class="text-center">
+              <img
+                type="button"
+                src="img/IntrotoEyewear.png"
+                alt="Intro to Eyewear"
+                class="img-fluid img-thumbnail"
+                id="introToEyewear-img"
+                data-bs-toggle="modal"
+                data-bs-target="#introToEyewearModal"
+              />
+              <a
+                href="#"
+                class="link-secondary d-block"
+                id="#introToEyewear"
+                data-bs-toggle="modal"
+                data-bs-target="#introToEyewearModal"
+                >Intro to Eyewear</a
+              >
+            </div>
+          </div>
+          <!-- !SECTION End Thumbnail -->
+          <!-- SECTION Lens Treatments Thumbnail -->
+          <div class="col-lg-4 col-md-6">
+            <div class="text-center">
+              <img
+                type="button"
+                src="img/LensTreatments.png"
+                alt="Lens Treatments"
+                class="img-fluid img-thumbnail"
+                id="lensTreatments-img"
+                data-bs-toggle="modal"
+                data-bs-target="#lensTreatmentsModal"
+              />
+              <a
+                href="#"
+                class="link-secondary d-block"
+                id="#lensTreatments"
+                data-bs-toggle="modal"
+                data-bs-target="#lensTreatmentsModal"
+                >Lens Treatments</a
+              >
+            </div>
+          </div>
+          <!-- !SECTION End Thumbnail -->
+          <!-- SECTION Retinal Imaging Thumbnail -->
+          <div class="col-lg-4 col-md-6">
+            <div class="text-center">
+              <img
+                type="button"
+                src="img/RetinalImaging.png"
+                alt="Retinal Imaging"
+                class="img-fluid img-thumbnail"
+                id="retinalImaging-img"
+                data-bs-toggle="modal"
+                data-bs-target="#retinalImagingModal"
+              />
+              <a
+                href="#"
+                class="link-secondary d-block"
+                id="#retinalImaging"
+                data-bs-toggle="modal"
+                data-bs-target="#retinalImagingModal"
+                >Retinal Imaging</a
+              >
+            </div>
+          </div>
+          <!-- !SECTION End Thumbnail -->
+        </div>
+        <div class="row mx-auto my-5 w-50">
+          <!-- SECTION Second Pair Thumbnail -->
+          <div class="col-lg-4 col-md-6">
+            <div class="text-center">
+              <img
+                type="button"
+                src="img/SecondPair.png"
+                alt="Second Pair Options"
+                class="img-fluid img-thumbnail"
+                id="secondPair-img"
+                data-bs-toggle="modal"
+                data-bs-target="#secondPairModal"
+              />
+              <a
+                href="#"
+                class="link-secondary d-block"
+                id="#secondPair"
+                data-bs-toggle="modal"
+                data-bs-target="#secondPairModal"
+                >Second Pair Options</a
+              >
+            </div>
+          </div>
+          <!-- !SECTION End Thumbnail -->
+          <!-- SECTION Light Adaptive Lenses Thumbnail -->
+          <div class="col-lg-4 col-md-6">
+            <div class="text-center">
+              <img
+                type="button"
+                src="img/LightAdaptiveLenses.png"
+                alt="Light Adaptive Lenses"
+                class="img-fluid img-thumbnail"
+                id="lightAdaptiveLenses-img"
+                data-bs-toggle="modal"
+                data-bs-target="#lightAdaptiveLensesModal"
+              />
+              <a
+                href="#"
+                class="link-secondary d-block"
+                id="#lightAdaptiveLenses"
+                data-bs-toggle="modal"
+                data-bs-target="#lightAdaptiveLensesModal"
+                >Light Adaptive Lenses</a
+              >
+            </div>
+          </div>
+          <!-- !SECTION End Thumbnail -->
+          <!-- SECTION Progressive Lens Thumbnail -->
+          <div class="col-lg-4 col-md-6">
+            <div class="text-center">
+              <img
+                type="button"
+                src="img/ProgressiveLenses.png"
+                alt="Progressive Lens"
+                class="img-fluid img-thumbnail"
+                id="progressiveLens-img"
+                data-bs-toggle="modal"
+                data-bs-target="#progressiveLensModal"
+              />
+              <a
+                href="#"
+                class="link-secondary d-block"
+                id="#progressiveLens"
+                data-bs-toggle="modal"
+                data-bs-target="#progressiveLensModal"
+                >Progressive Lens</a
+              >
+            </div>
+          </div>
+          <!-- !SECTION End Thumbnail -->
+        </div>
+      </div>
+    </section>
+    <!-- !SECTION -->
+    <!-- SECTION Ophthalmology Prodcut Suite -->
+    <section></section>
+    <!-- !SECTION -->
+
+    <!-- SECTION Hidden elements -->
+    <!-- SECTION Intro to Eyewear Modal -->
+    <div
+      class="modal fade"
+      id="introToEyewearModal"
+      tabindex="-1"
+      aria-labelledby="introToEyewearModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header modal-header-primary">
+            <h4 class="modal-title">Intro to Eyewear</h4>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-5 mx-auto">
+                  <img
+                    src="img/IntrotoEyewear.png"
+                    alt="Intro to Eyewear"
+                    class="img-fluid img-thumbnail"
+                  />
+                </div>
+
+                <div class="col-10 mx-auto mt-3">
+                  <form>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="user-avatar"
+                        ><i class="far fa-user"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="patient-name"
+                        placeholder="Patient Name"
+                        aria-label="Patient Name"
+                        aria-labelledby="user-avatar"
+                      />
+                    </div>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="phone-avatar"
+                        ><i class="fas fa-phone"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="patient-number"
+                        placeholder="Patient Number"
+                        aria-label="Patient Number"
+                        aria-labelledby="phone-avatar"
+                      />
+                    </div>
+                    <div class="row">
+                      <div class="col text-end">
+                        <button
+                          type="button"
+                          class="btn btn-secondary mr-2"
+                          data-bs-dismiss="modal"
+                        >
+                          Back to Menu
+                        </button>
+                        <button
+                          type="submit"
+                          class="btn btn-primary btn-primary-new"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- !SECTION End of Intro to Eyewear Modal -->
+    <!-- SECTION Lens Treatments Modal -->
+    <div
+      class="modal fade"
+      id="lensTreatmentsModal"
+      tabindex="-1"
+      aria-labelledby="lensTreatmentsModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Lens Treatments</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-5 mx-auto">
+                  <img
+                    src="img/LensTreatments.png"
+                    alt="Lens Treatments"
+                    class="img-fluid img-thumbnail"
+                  />
+                </div>
+
+                <div class="col-10 mx-auto mt-3">
+                  <form>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="user-avatar"
+                        ><i class="far fa-user"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="patient-name"
+                        placeholder="Patient Name"
+                        aria-label="Patient Name"
+                        aria-labelledby="user-avatar"
+                      />
+                    </div>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="phone-avatar"
+                        ><i class="fas fa-phone"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="patient-number"
+                        placeholder="Patient Number"
+                        aria-label="Patient Number"
+                        aria-labelledby="phone-avatar"
+                      />
+                    </div>
+                    <div class="row">
+                      <div class="col text-end">
+                        <!-- <button
+                          type="button"
+                          class="btn btn-secondary mr-2"
+                          data-bs-dismiss="modal"
+                        >
+                          Back to Menu
+                        </button> -->
+                        <button type="submit" class="btn btn-primary">
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- !SECTION End of Lens Treatments Modal -->
+    <!-- SECTION Retinal Imaging Modal -->
+    <div
+      class="modal fade"
+      id="retinalImagingModal"
+      tabindex="-1"
+      aria-labelledby="retinalImagingModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="d-flex justify-content-between align-items-center">
+              <img
+                class="img-thumbnail mr-2"
+                src="img/RetinalImagingThumb.png"
+                alt="Retinal Imaging"
+              />
+              <h4 class="modal-title">Retinal Imaging</h4>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4">
+            <div class="container-fluid">
+              <div class="row">
+                <!-- <div class="col-5 mx-auto">
+                  <img
+                    src="img/RetinalImaging.png"
+                    alt="Retinal Imaging"
+                    class="img-fluid img-thumbnail"
+                  />
+                </div> -->
+
+                <div class="col-10 mx-auto mt-3">
+                  <form>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="user-avatar"
+                        ><i class="far fa-user"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="patient-name"
+                        placeholder="Patient Name"
+                        aria-label="Patient Name"
+                        aria-labelledby="user-avatar"
+                      />
+                    </div>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="phone-avatar"
+                        ><i class="fas fa-phone"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="patient-number"
+                        placeholder="Patient Number"
+                        aria-label="Patient Number"
+                        aria-labelledby="phone-avatar"
+                      />
+                    </div>
+                    <div class="row">
+                      <div class="col text-end">
+                        <button type="submit" class="btn btn-primary">
+                          Submit
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-secondary mr-2"
+                          data-bs-dismiss="modal"
+                        >
+                          Cancel
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- !SECTION End of Retinal Imaging Modal -->
+    <!-- SECTION Second Pair Options Modal -->
+    <div
+      class="modal fade"
+      id="secondPairModal"
+      tabindex="-1"
+      aria-labelledby="secondPairModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header modal-header-primary">
+            <h4 class="modal-title">Second Pair Options</h4>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-5 mx-auto">
+                  <img
+                    src="img/SecondPair.png"
+                    alt="Second Pair Options"
+                    class="img-fluid img-thumbnail"
+                  />
+                </div>
+
+                <div class="col-10 mx-auto mt-3">
+                  <form>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="user-avatar"
+                        ><i class="far fa-user"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="patient-name"
+                        placeholder="Patient Name"
+                        aria-label="Patient Name"
+                        aria-labelledby="user-avatar"
+                      />
+                    </div>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="phone-avatar"
+                        ><i class="fas fa-phone"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="patient-number"
+                        placeholder="Patient Number"
+                        aria-label="Patient Number"
+                        aria-labelledby="phone-avatar"
+                      />
+                    </div>
+                    <div class="row">
+                      <div class="col text-end">
+                        <button
+                          type="button"
+                          class="btn btn-secondary mr-2"
+                          data-bs-dismiss="modal"
+                        >
+                          Back to Menu
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- !SECTION End of Second Pair Modal -->
+    <!-- SECTION Light Adaptive Lenses Modal -->
+    <div
+      class="modal fade"
+      id="lightAdaptiveLensesModal"
+      tabindex="-1"
+      aria-labelledby="lightAdaptiveLensesModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Light Adaptive Lenses</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-5 mx-auto">
+                  <img
+                    src="img/LightAdaptiveLenses.png"
+                    alt="Light Adaptive Lenses"
+                    class="img-fluid img-thumbnail"
+                  />
+                </div>
+
+                <div class="col-10 mx-auto mt-3">
+                  <form>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="user-avatar"
+                        ><i class="far fa-user"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="patient-name"
+                        placeholder="Patient Name"
+                        aria-label="Patient Name"
+                        aria-labelledby="user-avatar"
+                      />
+                    </div>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="phone-avatar"
+                        ><i class="fas fa-phone"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="patient-number"
+                        placeholder="Patient Number"
+                        aria-label="Patient Number"
+                        aria-labelledby="phone-avatar"
+                      />
+                    </div>
+                    <div class="row">
+                      <div class="col text-end">
+                        <button
+                          type="button"
+                          class="btn btn-secondary mr-2"
+                          data-bs-dismiss="modal"
+                        >
+                          Back to Menu
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- !SECTION End of Light Adapative Lenses Modal -->
+    <!-- SECTION Progressive Lens Modal -->
+    <div
+      class="modal fade"
+      id="progressiveLensModal"
+      tabindex="-1"
+      aria-labelledby="progressiveLensModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="d-flex justify-content-between align-items-center">
+              <img
+                class="img-thumbnail mr-2"
+                src="img/ProgressiveLensesThumb.png"
+                alt="Progressive Lens"
+              />
+              <h4 class="modal-title">Progressive Lens</h4>
+            </div>
+          </div>
+          <div class="modal-body p-4">
+            <div class="container-fluid">
+              <!-- <div class="col-5 mx-auto">
+                  <img
+                    src="img/ProgressiveLenses.png"
+                    alt="Progressive Lens"
+                    class="img-fluid img-thumbnail"
+                  />
+                </div> -->
+              <form>
+                <div class="row g-3 my-2 justify-content-center">
+                  <div class="col-5">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="user-avatar"
+                        ><i class="far fa-user"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="patient-name"
+                        placeholder="Patient Name"
+                        aria-label="Patient Name"
+                        aria-labelledby="user-avatar"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-5">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="phone-avatar"
+                        ><i class="fas fa-phone"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="patient-number"
+                        placeholder="Patient Number"
+                        aria-label="Patient Number"
+                        aria-labelledby="phone-avatar"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-1">
+                    <button class="btn btn-success">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col text-end">
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary mr-2"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- !SECTION End of Progressive Lens Modal -->
+    <!-- !SECTION End of hidden content section-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
